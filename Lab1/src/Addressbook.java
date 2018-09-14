@@ -1,5 +1,5 @@
 /**
- * Lab 2
+ * Lab 
  * Name: Zoha Mehdi
  * Student number: 101054547
  * Course and Section: 3110 L2 
@@ -40,11 +40,9 @@ public class Addressbook {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
-		
-		BuddyInfo buddy = new BuddyInfo("Totine", "prince of world", "516"); //Creating a buddy object
-		AddressBook addressBook = new AddressBook(); //Creating AddressBook object
-		addressBook.addBuddy(buddy); //Adding buddy in the ArrayList
-		addressBook.removeBuddy(0); //Removing buddy at index 0.
+
+		System.out.println("Address Book");
+				
 	
 	}
 }
