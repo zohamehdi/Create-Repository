@@ -30,9 +30,6 @@ public class AddressBook {
 		// TODO Auto-generated method stub
 		System.out.println("Address Book");
 		
-		BuddyInfo buddy = new BuddyInfo("Totine", "prince of world", "516");
-		AddressBook addressBook = new AddressBook();
-		addressBook.addBuddy(buddy);
-		addressBook.removeBuddy(0);
+		
 	}
 }
