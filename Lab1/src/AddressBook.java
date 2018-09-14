@@ -6,40 +6,33 @@ public class AddressBook {
 	
 	private BuddyInfo b;
 
-	private static ArrayList<String> NA = new ArrayList();
-	private static ArrayList<String> Ad = new ArrayList();
-	private static ArrayList<Integer> pn = new ArrayList();
-	private static List<List> jj = new ArrayList();
-	private static String name;
-	private String address;
-	private int Phone_Number;
+	private static ArrayList<BuddyInfo> buddyInfo = new ArrayList();
 	
-	public void addBuddy(String name, String address, int Phone_Number) {
+	
+	public void addBuddy(BuddyInfo abuddyInfo) {
 		
-	 NA.add(name);   
-	  Ad.add(address);
-	  pn.add(Phone_Number);
-	 jj.add(NA);
-	 jj.add(Ad);
-	 jj.add(pn);
+		if(buddyInfo != null) {
+			buddyInfo.add(abuddyInfo);
+		}
+	
 		
 	}
 	
-	public void removeBuddy(String name, String address, int Phone_Number) {
+	public void removeBuddy(int index) {
 		
-		jj.remove(name);
-		jj.remove(address);
-		jj.remove(Phone_Number);
+		if(index >= 0 &&  index < buddyInfo.size()) {
+			
+			buddyInfo.remove(index);
+		}
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		AddressBook l = new AddressBook();
-		l.addBuddy("lol", "uhh", 86877);
-		//l.addBuddy("lala", "jhkjhk", 67555);
+		System.out.println("Address Book");
 		
-		for(List t: jj) {
-			System.out.println(t);
-		}
+		BuddyInfo buddy = new BuddyInfo("Totine", "prince of world", "516");
+		AddressBook addressBook = new AddressBook();
+		addressBook.addBuddy(buddy);
+		addressBook.removeBuddy(0);
 	}
 }
