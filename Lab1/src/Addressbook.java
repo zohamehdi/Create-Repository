@@ -45,6 +45,8 @@ public class Addressbook {
 		Addressbook addressBook = new Addressbook(); //Creating AddressBook object
 		addressBook.addBuddy(buddy); //Adding buddy in the ArrayList
 		addressBook.removeBuddy(0); //Removing buddy at index 0.
+		
+		//haha
 				
 	
 	}
