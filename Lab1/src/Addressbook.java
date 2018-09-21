@@ -41,7 +41,10 @@ public class Addressbook {
 		// TODO Auto-generated method stub
 	
 
-		System.out.println("Address Book");
+		BuddyInfo buddy = new BuddyInfo("Totine", "prince of world", "516"); //Creating a buddy object
+		Addressbook addressBook = new Addressbook(); //Creating AddressBook object
+		addressBook.addBuddy(buddy); //Adding buddy in the ArrayList
+		addressBook.removeBuddy(0); //Removing buddy at index 0.
 				
 	
 	}
