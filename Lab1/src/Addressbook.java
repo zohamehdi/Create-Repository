@@ -36,7 +36,7 @@ public class Addressbook {
 			buddyInfo.remove(index); //Remove buddy by index
 		}
 	}
-	
+	//something
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	
